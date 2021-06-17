@@ -15,16 +15,15 @@ html * {
     height: 200vh;
 }
 h1 {
+    text-transform: uppercase;
     text-align: center;
     color: black;
-    background-color: rgba(185, 185, 185, 0.828);
     font-size: 35px;
-    
 }
 ol {
     text-align: left;
     line-height: 1,5;
-    width: 50%;
+    width: 70%;
     margin: auto;
     font-size: 200%;
 }
