@@ -1,0 +1,42 @@
+html * {
+    margin: 0;
+}
+
+#banner {
+    height: 50vh;
+    background-color: #430077d8;
+}
+.bannerg {
+    display:block;
+    margin: auto;
+    height: 50vh;
+}
+#corpo {
+    height: 200vh;
+}
+h1 {
+    text-align: center;
+    color: black;
+    background-color: rgba(185, 185, 185, 0.828);
+    font-size: 35px;
+    
+}
+ol {
+    text-align: left;
+    line-height: 1,5;
+    width: 50%;
+    margin: auto;
+    font-size: 200%;
+}
+ol li {
+    line-height: 3;
+}
+a {
+    color: black;
+}
+img#imgcorpo {
+    display: block;
+    height:30vh;
+    margin-left: auto;
+    margin-right: auto;
+}
