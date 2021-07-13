@@ -1,0 +1,32 @@
+div.caixa1{
+    background-color: rgb(119, 26, 119);
+    border: 5px inset rgb(135, 25, 49);
+}
+
+div.caixa2{
+    background-color:rgb(135, 25, 49);
+    border: 5px dotted #d4a7b6;
+    position: relative;
+    top: -150px;
+    right: 100px;
+}
+
+div.caixa3{
+    background-color: royalblue;
+    border-style: dashed groove dotted ;
+    border-color: black red yellow white;
+    border-width: 7px;
+    position: relative;
+    top: -400px;
+    left: 100px;
+}
+
+div{
+    display: inline-flexbox;
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    padding: 40px;
+    box-sizing: border-box;
+    position: relative;
+}

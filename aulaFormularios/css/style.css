@@ -1,0 +1,73 @@
+/* :pseudo-classes :link :visited :hover :active */
+/* :link coloca uma cor em alguma URL, precisa da tag <a href=""> */
+/* :visited uma cor diferente para quando o usuário já clicou na URL anteriormente */
+
+/* :hover aplica estilo a qualquer elemento que posicionemos o cursor */
+#nome:hover {
+    background-color: #9797c3;
+}
+
+#senha:hover {
+    background-color: #9797c3;
+}
+
+#email:hover {
+    background-color: #9797c3;
+}
+
+.buttons:hover {
+    color: black;
+    background-color: green;
+}
+
+.bCancelar:hover {
+    background-color: red;
+    color: black;
+}
+
+/* active, normalmente usado para fazer animação do click */
+.buttons:active {
+    background-color: rgb(215, 129, 223);
+    border-color: rgb(161, 17, 89);
+    color: red;
+}
+
+/* somente para alinhar o formulário e deixar menor feio */
+form {
+    text-align:center;
+}
+
+/* input é outro elemento que que tem pseudo-classes específicas. */
+/* Pseudo-classes :focus :enabled :disabled :target */
+
+/* :focus se aplica quando o usuário clica nesse elemento, mais comum em campos de preenchimento */
+.buttons:focus {
+    border-color: orangered;
+    font-weight: bold;
+}
+
+/* :disabled para desabilitar algum elemento, normalmente usado em formulário que não pode ser preenchido */
+#nome:disabled {
+    background-color: grey;
+}
+
+/* Pseudo-elementos nomeDoSelector::pseudo-elemento{}
+os mais utilizados sao ::before ::after ::first-letter ::first-line*/
+
+#nome:hover::after {
+    content: "Teste";
+    color: blue;
+}
+
+
+/* :invalid estiliza o <input> dentro de <form> quando os conteúdos não foram inseridos corretamente ou não foram validados. */
+#email:invalid {
+    background-color: rgb(246, 82, 82);
+}
+
+
+/* :nth-child(numero do elemento irmão) */
+li:nth-child(2) {
+    border-radius: 5px;
+    background: red;
+}
