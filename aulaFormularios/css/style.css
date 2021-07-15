@@ -2,9 +2,24 @@
 * {
     margin: 0; padding: 0;
 }
+header{
+ height: 20vh;
+}
+main{
+    height: 60vh;
+}
+footer{
+    height: 20vh;
+}
 form {
-    margin: 200px 30px;
-    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+
+.cobertura{
+    flex-grow: 1;
 }
 
 /* :pseudo-classes :link :visited :hover :active */
@@ -33,6 +48,7 @@ form {
     font-size: 20px;
     border-style:solid;
     animation: butao 3s infinite;
+    flex-wrap: wrap;
 }
  /* :hover quando o cursor estiver em cima */
 #buttonAcc:hover {
@@ -54,9 +70,6 @@ form {
     25%{ opacity: 50%;}
     100%{ opacity: 100%;}
 }
-
-
-
 
 #buttonCanc {
     background-color: rgb(255, 255, 255);
@@ -109,7 +122,7 @@ os mais utilizados sao ::before ::after ::first-letter ::first-line*/
 
 /* :invalid enquanto o email não for válido ele fica vermelho */
 #email:invalid {
-    background-color: rgb(255, 251, 16);
+background-color: rgb(255, 251, 16);
 }
 /* quando o email for válido ele fica verde */
 #email:valid {
