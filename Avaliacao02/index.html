@@ -7,6 +7,9 @@
     <title> Game Setting Championship </title> <!-- nome que aparece na aba do navegador -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="https://bit.ly/2VBpMkz"> <!-- flaticon -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -14,47 +17,48 @@
     <header>
         <!-- um cabeçalho -->
         <h1>O maior campeonato de Setup Gamer do Brasil!<h1>
-        <h2>by:<a href="https://www.turumeshop.com.br/">Turum E-Shop</a></h2>
+                <h2>by: <a href="https://www.turumeshop.com.br/">🎮 Turum E-Shop 🎮</a></h2>
+
     </header>
     <main>
         <!-- parte principal  -->
-        <h3>🎮 Se inscreva e mostre para o mundo o Seu mundo! 🎮</h3>
+        <h3>Se inscreva e mostre para o mundo o Seu mundo!</h3>
         <div id="form">
             <form method="POST" action="index.html" name="cadastro">
-                <div id="dados">
-                    <h4>Cadastro:</h4>
-                    <input type="text" name="name" placeholder="Digite seu nome completo*" required>
-                    <input type="text" name="cpf" placeholder="CPF*" pattern="\d{3}\.?\d{3}\.?\d{3}\-?\d{2}" required>
-                    <input type="email" name="email" placeholder="Email*" required>
-                    <input type="tel" name="tel" placeholder="Telefone*" required>
-                </div>
 
-                <div id="login">
-                    <h4>Login:</h4>
-                    <input type="text" name="login" placeholder="Apelido*" required>
-                    <input type="password" name="password" placeholder="Crie uma senha*">
-                </div>
+                <h4>Cadastro:</h4>
+                <input type="text" name="name" placeholder="Digite seu nome completo*" required>
+                <input type="text" name="cpf" placeholder="CPF*" pattern="\d{3}\.?\d{3}\.?\d{3}\-?\d{2}" required>
+                <input type="email" name="email" placeholder="Email*" required>
+                <input type="tel" name="tel" placeholder="Telefone*" required>
 
-                <div id="pagamento">
-                    <fieldset>
-                        <!-- <fieldset> agrupa os elementos do formulário com uma borda, fica mais intuitivo -->
-                        <legend>Taxa de Inscrição R$5,00</legend><br>
-                        <input type="radio" name="meio-de-pagamento" value="pix" checked>Pix
-                        <input type="radio" name="meio-de-pagamento" value="debito">Débito
-                        <input type="radio" name="meio-de-pagamento" value="credito">Crédito<br></p>
-                    </fieldset>
-                </div>
 
-                <div id="termos">
-                    <!-- termos aceite obrigatório -->
-                    <h5><input type="checkbox" name="termosAceite" required>
-                        Eu concordo com todos os termos do campeonato</h5>
-                </div>
-                <div id="botoes">
-                    <!-- botão para aceitar ou limpar os dados -->
-                    <button id="bcadastrar" type="submit">Go, Go, Go!</button>
-                    <button id="breset" type="reset">Gamer Over!</button>
-                </div>
+
+                <h4>Login:</h4>
+                <input type="text" name="login" placeholder="Apelido*" required>
+                <input type="password" name="password" placeholder="Crie uma senha*">
+
+
+
+                <fieldset>
+                    <!-- <fieldset> agrupa os elementos do formulário com uma borda, fica mais intuitivo -->
+                    <legend>Taxa de Inscrição R$5,00</legend><br>
+                    <input type="radio" name="meio-de-pagamento" value="pix" checked>Pix
+                    <input type="radio" name="meio-de-pagamento" value="debito">Débito
+                    <input type="radio" name="meio-de-pagamento" value="credito">Crédito<br></p>
+                </fieldset>
+
+
+
+                <!-- termos aceite obrigatório -->
+                <h5><input type="checkbox" name="termosAceite" required>
+                    Eu concordo com todos os termos do campeonato</h5>
+
+
+                <!-- botão para aceitar ou limpar os dados -->
+                <button id="bcadastrar" type="submit">Go, Go, Go!</button>
+                <button id="breset" type="reset">Gamer Over!</button>
+
             </form>
         </div>
 

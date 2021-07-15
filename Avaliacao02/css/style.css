@@ -3,123 +3,108 @@
 }
 
 body{
+    font-family: 'Roboto Slab', serif;
+    min-height: 100vh;
+    background-image: url("../img/fundo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     
 }
 
-
 header {
     display: flex;
-    justify-content:;
+    flex-direction: column;
     align-items: center;
     padding: 20px;
     background: #0086FA;
     flex-wrap: wrap;
+    background: rgb(44,7,112);
+    background: linear-gradient(90deg, rgba(44,7,112,1) 11%, rgba(127,48,214,1) 40%, rgba(181,48,214,1) 83%);
+    color: rgb(241, 241, 241);
+}
+
+a {
+    color: inherit;
+    
+}
+
+h2:hover{
+    animation: control 1s;
+}
+
+@keyframes control {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
 
 h1 {
-    display: flex;
-    justify-content:;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-h2 {
-    display: flex;
-    justify-content:;
-    align-items:flex-end;
-    flex-wrap: wrap;
-}
-
-
-h1, h2{
-    padding-top:3%;
-    text-align:center;
+    font-size: 50px;
 }
 
 main {
-    position:static;
-    /* height: 65vh; */
-    background-color: rgb(255, 255, 255);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+    flex-direction: column;
 }
 
-h3{
-    font-size: 180%;
+#form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-}
-h4{
-    font-size: 120%;
-    text-align: center;
+    width: 20rem;
 }
 
-
-
-form {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-    padding: 0.5%;
-}
-div#dados {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-    padding: 0.5%;
-}
-div#login {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-    padding: 0.5%;
-}
-div#termos {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-    padding: 0.5%;
-}
-div#botoes {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-    padding: 0.5%;
-}
-div#pagamentos {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
+input {
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid transparent;
+    padding: 0.4rem;
+    transition: all 0.2s ease-in-out;
 }
 
-/* botão gogogo cadastrar */
-#bcadastrar{
-    margin: 2%;
-    background-color: rgb(110, 219, 0);
-    font: bold;
-    transition-duration: 0.5s;
-}
-#bcadastrar:hover {
-    transform:scale(5px);
-}
-#bcadastrar:active {
-    background-color: rgb(6, 167, 0);
+input:hover {
     border-color: rgb(0, 0, 0);
-    color: rgb(0, 0, 0);
-    border-style:ridge;
 }
 
-/* botão reset Gamer Over */
-#breset {
- margin: 2%;
+h3 {
+    font-size: 2rem;
 }
 
+h4 {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+}
 
+h5 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
 
-footer {
-    /* height: 10vh; */
-    background-color: rgb(136, 42, 190);
+button {
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    padding: 0.7rem 1rem;
+    background-color: #57147E;
+    color: white;
+    font-weight: bold;
+    cursor:pointer;
+    margin: 0 0.5rem ;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+    border-color: black;
+}
+
+fieldset {
+    margin-top: 1rem;
 }
