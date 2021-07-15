@@ -1,3 +1,12 @@
+/* conf básica, não faz parte desse estudo de formulários */
+* {
+    margin: 0; padding: 0;
+}
+form {
+    margin: 200px 30px;
+    font-size: 20px;
+}
+
 /* :pseudo-classes :link :visited :hover :active */
 /* :link coloca uma cor em alguma URL, precisa da tag <a href=""> */
 /* :visited uma cor diferente para quando o usuário já clicou na URL anteriormente */
@@ -15,22 +24,60 @@
     background-color: #9797c3;
 }
 
-.buttons:hover {
-    color: black;
-    background-color: green;
+
+
+/*Botão de aceitar/comprar*/
+#buttonAcc {
+    background-color: lawngreen;
+    font-weight: bold;
+    font-size: 20px;
+    border-style:solid;
+    animation: butao 3s infinite;
+}
+ /* :hover quando o cursor estiver em cima */
+#buttonAcc:hover {
+    background-color: rgb(110, 219, 0);
+    font-size: 30px;
+    border-radius: 50%;
+    transition-duration: 2s;
+    transform: skew(15deg);
+}
+/* active, quando clicamos gera uma animação */
+#buttonAcc:active {
+    background-color: rgb(6, 167, 0);
+    border-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    border-style:ridge;
+}
+@keyframes butao {
+    0%{ opacity: 100%; transform: rotate(360deg);}
+    25%{ opacity: 50%;}
+    100%{ opacity: 100%;}
 }
 
-.bCancelar:hover {
-    background-color: red;
-    color: black;
+
+
+
+#buttonCanc {
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+ /* :hover quando o cursor está em cima */
+#buttonCanc:hover {
+    background-color: rgb(235, 0, 0);
+    color: white;
+    /* font-size: 10px; */
+    transition-duration: 0.2s;
+    transform: translateY(150px);
+}
+#buttonCanc:active {
+    background-color: rgb(233, 0, 0);
+    border-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-style:inset;
 }
 
-/* active, normalmente usado para fazer animação do click */
-.buttons:active {
-    background-color: rgb(215, 129, 223);
-    border-color: rgb(161, 17, 89);
-    color: red;
-}
+
 
 /* somente para alinhar o formulário e deixar menor feio */
 form {
@@ -41,30 +88,33 @@ form {
 /* Pseudo-classes :focus :enabled :disabled :target */
 
 /* :focus se aplica quando o usuário clica nesse elemento, mais comum em campos de preenchimento */
-.buttons:focus {
+#buttons:focus {
     border-color: orangered;
     font-weight: bold;
 }
 
 /* :disabled para desabilitar algum elemento, normalmente usado em formulário que não pode ser preenchido */
-#nome:disabled {
-    background-color: grey;
+#texto:disabled {
+    background-color: whitesmoke;
 }
 
 /* Pseudo-elementos nomeDoSelector::pseudo-elemento{}
 os mais utilizados sao ::before ::after ::first-letter ::first-line*/
 
-#nome:hover::after {
+#nome::after {
     content: "Teste";
     color: blue;
 }
 
 
-/* :invalid estiliza o <input> dentro de <form> quando os conteúdos não foram inseridos corretamente ou não foram validados. */
+/* :invalid enquanto o email não for válido ele fica vermelho */
 #email:invalid {
-    background-color: rgb(246, 82, 82);
+    background-color: rgb(255, 251, 16);
 }
-
+/* quando o email for válido ele fica verde */
+#email:valid {
+    background-color: rgb(105, 233, 148);
+}
 
 /* :nth-child(numero do elemento irmão) */
 li:nth-child(2) {
