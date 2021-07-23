@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- informa ao navegador que o padrão da lingua é PT-BR -->
+
+<head>
+    <meta charset="UTF-8"> <!-- padrao para letras em PT-BR como Ç ou outros acentos e simbolos -->
+    <title></title> <!-- nome que aparece na aba do navegador -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="" href=""> <!-- flaticon -->
+</head>
+
+<body>
+    <!-- corpo, tudo que vai aparecer no site  -->
+    <header>
+        <!-- um cabeçalho -->
+
+    </header>
+    <main>
+        <!-- parte principal  -->
+
+        <!-- <form>tag para iniciar um formulário  -->
+        <form action="/registro" method="POST">
+
+            <!-- <input>campo do nome  -->
+            <p><label for="nome">Login:</label><br>
+                <!-- label serve para quando o cliente clicar no nome, marcar a opção, para não correr o risco de ter que clicar naquela caixa pequena -->
+                <input type="text" name="nome" id="nome" placeholder="Digite seu Login" required><br>
+
+                <!-- <input>campo de senha  -->
+                <label for="senha">Senha:</label><br>
+                <input type="password" name="senha" id="senha" placeholder="*******" required><br>
+
+                <!-- <input>campo para email  -->
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" id="email" placeholder="login@mail.com" required><br>
+
+                <!-- <textarea>diferente dos input, campo para adicionar um texto  -->
+                <label for="texto">Detalhes do Pedido:</label><br>
+                <textarea name="texto" id="texto" placeholder="Coloque observação, molho a parte e etc."></textarea><br>
+            </p>
+
+            <!-- <select> da possibilidade de opções para o usuário.  -->
+            <!-- <optgroup> deixa em negrito alguns tópicos para ajudar a visualização do usuário -->
+            <p class="cobertura">Escolha uma cobertura:<br>
+
+                <select class="cobertura" id="cobertura" name="cobertura">
+                    <optgroup label="Com Leite">
+                        <option value="chocolate">Chocolate</option>
+                        <option value="morango">Morango</option>
+                        <option value="abacaxi">Abacaxi</option> <!-- selected puxa como padrão o abacaxi -->
+                        <option value="coco com abacaxi">Abacaxi com Coco</option>
+                    </optgroup>
+
+                    <optgroup label="Sem Leite">
+                        <option value="nada">Nada</option>
+                        <option value="tudo">Tudo</option>
+                        <option value="tem">Tem</option>
+                        <option value="leite">Leite</option>
+                    </optgroup>
+                    
+                </select><br>
+            </p>
+
+            <!-- <Radio Buttons> -->
+            <!-- O usuário é obrigado a escolher pelo menos uma das opções -->
+            <!-- <Checked> deixa a opção como pre-selecionada -->
+            <p>
+            <fieldset>
+                <!-- <fieldset> agrupa os elementos do formulário com uma borda, fica mais intuitivo -->
+                <legend>Método de Pagamento:</legend><br>
+                <input type="radio" name="meio-de-pagamento" value="debito">Débito
+                <input type="radio" name="meio-de-pagamento" value="pix" checked>Pix
+                <input type="radio" name="meio-de-pagamento" value="credito">Crédito<br></p>
+            </fieldset>
+            </p>
+
+            <!-- <CheckBox> -->
+            <!-- no checkbox ao contrário do Radio, o usuário pode escolher mais de uma opção -->
+            <p>
+            <fieldset>
+                <label for="extras">Cobertura Extra:</label><br>
+                <input type="checkbox" name="extras" value="mm">M&M
+                <input type="checkbox" name="extras" value="canela">Canela
+                <!--tmb se pode usar o checked para deixar pre selecionado-->
+                <input type="checkbox" name="extras" value="acucar-mascavo">Açucar Mascavo<br><br>
+            </fieldset>
+            </p>
+
+            <p>
+            <fieldset>
+                <!-- <Extra CheckBox> é muito utilizado para opções de sim ou não como aceitar os termos -->
+                <input type="checkbox" name="termos" required>
+                <label for="termos">Aceito todos os termos e condições.</label><br><br>
+            </fieldset>
+
+            <!-- <Date> -->
+            <p><label for="date"> Data para entrega:</label><br>
+                <input type="date" name="date" value="2021-07-15">
+            </p><br><br>
+
+            <!-- <button> -->
+            <!-- submit tem a função de enviar os dados do formulario, como se fosse um aceitar, enviar, ou finalizar -->
+            <!-- nos botoes submit e reset não podemos usar <label> -->
+            <button id="buttonAcc" type="submit">Comprar</button>
+
+            <!-- reset limpa os campos do formulário // nos botoes submit e reset não podemos usar <label>  -->
+            <button id="buttonCanc" type="reset">Cancelar</button><br>
+
+
+
+
+        </form>
+    </main>
+    <footer>
+        <!-- rodapé -->
+
+    </footer>
+</body>
+
+</html>

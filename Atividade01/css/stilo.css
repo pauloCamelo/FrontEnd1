@@ -1,0 +1,47 @@
+html * {
+    margin: 0;
+}
+
+#banner {
+    height: 50vh;
+    background-color: #430077d8;
+}
+.bannerg {
+    display:block;
+    margin: auto;
+    height: 50vh;
+}
+#corpo {
+    height: 200vh;
+    margin: 1%;
+}
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    font-size: 35px;   
+}
+ol {
+    text-align: left;
+    line-height: 1,5;
+    width: 70%;
+    margin: auto;
+    font-size: 200%;
+    font-family: noto;
+}
+ol li {
+    line-height: 3;
+
+}
+a {
+    color: black;
+}
+img#imgcorpo {
+    display: block;
+    height:200px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+    padding: 30px;
+}

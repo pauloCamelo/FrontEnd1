@@ -1,0 +1,44 @@
+/*EXTRA
+    tirar a margem*/
+html * {
+    margin: 0;
+}
+
+body {
+    /* Centralizar textos */
+    text-align: center;
+    /* imagem de fundo */
+    background-image: url(https://bit.ly/3zaXUTI);
+    /*Remover Repeticao */
+    background-repeat: no-repeat;
+    /* Posicionamento */
+    background-position: center center;
+    /* Altura do body */
+    height: 100vh;
+    /* Tamanho da Imagem */
+    background-size: 500px;
+    /* fixar a imagem de fundo */
+    background-attachment: fixed;
+    /* cor de fundo */
+    background-color: rgb(0, 0, 0);
+}
+
+#cabecalho {
+    height: 20vh;
+    background-color: #f0f8ff4b;
+}
+
+#conteudo {
+    height: 60vh;
+    background-color: rgba(137, 43, 226, 0.335);
+
+}
+
+#rodape{
+    height: 20vh;
+    background-color: #00000042;
+}
+
+.icones{
+    width: 80px;
+}
